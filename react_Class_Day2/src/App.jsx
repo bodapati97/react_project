@@ -1,13 +1,15 @@
 import { useState } from 'react'
 import Counter from './Counter'
+import RegistrationForm from './registrationForm/RegistrationForm'
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0)
 
   return (
-    <Counter/>
-  
+    <div><Counter/></div>
+  // <Counter/>
+  // <RegistrationForm/>
   )
 }
 
