@@ -1,0 +1,62 @@
+.Heading {
+    display: flex;
+    justify-content: wrap;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;  
+}
+
+
+.Counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.add
+{
+    background-color: #4CAF50; 
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.sub
+{
+    background-color: red; 
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+.btn_display
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold
+}
+
+#reset
+{
+color: aliceblue;
+background-color: blue;
+padding: 1.5vh;
+border-radius: 5px;
+}
+
+.Counter
+{
+display: flex;
+justify-content: space-around;
+}
