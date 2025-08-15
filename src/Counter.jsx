@@ -2,7 +2,7 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import './Counter.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoffee, faStar } from "@fortawesome/free-solid-svg-icons";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 
 function Counter() {
@@ -12,19 +12,14 @@ function Counter() {
     
 
     const increaseCount = () => {
-        if (count < 10) {
-            setCount(count + 1);
-            // fetchDataFromAPI();
-        }
-
-    }
+        setCount(prev => (prev < 10 ? prev + 1 : prev));
+        // fetchDataFromAPI();
+    };
 
     const decreaseCount = () => {
-        if (count > 1) {
-            setCount(count - 1);
-            // fetchDataFromAPI();
-        }
-    }
+        setCount(prev => (prev > 1 ? prev - 1 : prev));
+        // fetchDataFromAPI();
+    };
 
    
     useEffect(() => {
